@@ -32,7 +32,12 @@
     "*.md",
     "index.js"
   ],
-  "keywords": [],
+  "keywords": [
+     "posthtml",
+     "posthtml-plugin",
+     "html",
+     "insert"
+  ],
   "lint-staged": {
     "*.js": [
       "prettier-eslint --write",
