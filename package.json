@@ -4,9 +4,7 @@
   "description": "PostHTML plugin to insert content after HTML tag.",
   "scripts": {
     "lint": "eslint --ext js,md .",
-    "test": "jest",
-    "precommit": "lint-staged",
-    "prepush": "jest"
+    "test": "jest"
   },
   "dependencies": {
     "posthtml": "^0.11.3",
@@ -33,10 +31,10 @@
     "index.js"
   ],
   "keywords": [
-     "posthtml",
-     "posthtml-plugin",
-     "html",
-     "insert"
+    "posthtml",
+    "posthtml-plugin",
+    "html",
+    "insert"
   ],
   "lint-staged": {
     "*.js": [
@@ -44,5 +42,11 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "jest"
+    }
   }
 }
