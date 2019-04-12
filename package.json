@@ -1,6 +1,6 @@
 {
   "name": "posthtml-insert",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "PostHTML plugin to insert content after HTML tag.",
   "scripts": {
     "lint": "eslint --ext js,md .",
